@@ -57,3 +57,11 @@
 {"address": {"building": "45", "coord": [34.766667, -0.683333], "street": "Madison Avenue", "postcode": "10022"}, "cuisine": "American ", "grades": [{"date": {"$date": 1401753600000}, "grade": "A", "score": 9}, {"date": {"$date": 1370563200000}, "grade": "A", "score": 5}, {"date": {"$date": 1340928000000}, "grade": "A", "score": 12}, {"date": {"$date": 1328486400000}, "grade": "A", "score": 11}, {"date": {"$date": 1308787200000}, "grade": "A", "score": 13}], "name": "Berkely", "restaurant_id": "40363685"}
 {"address": {"building": "46", "coord": [34.914, -0.521], "street": "East 92 Street", "postcode": "11236"}, "cuisine": "American ", "grades": [{"date": {"$date": 1391558400000}, "grade": "A", "score": 0}, {"date": {"$date": 1359417600000}, "grade": "A", "score": 3}, {"date": {"$date": 1323302400000}, "grade": "A", "score": 10}], "name": "Sonny'S Heros", "restaurant_id": "40363744"}
 {"address": {"building": "47", "coord": [36.816667, -1.283333], "street": "Hylan", "postcode": "10305"}, "cuisine": "Ice Cream, Gelato, Yogurt, Ices", "grades": [{"date": {"$date": 1398297600000}, "grade": "A", "score": 12}, {"date": {"$date": 1361836800000}, "grade": "A", "score": 5}, {"date": {"$date": 1328140800000}, "grade": "A", "score": 2}], "name": "Carvel Ice Cream", "restaurant_id": "40363834"}
+
+
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --experimental-scope-hoisting --public-url . index.html"
+  }
+}
+
