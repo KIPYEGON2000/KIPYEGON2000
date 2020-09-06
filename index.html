@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JSON Test</title>
+    <title>kipyegon Amos </title>
 </head>
-<body>
+<body style ="background:blue">
     <h1>kipyegon Amos </h1>
     <div id="myData"></div>
     <script>
@@ -24,7 +24,7 @@
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
-                div.innerHTML = 'Street : ' + data[i].address . street+''+'NAME:'+data[i]. name ;
+                div.innerHTML = 'Street : ' + data[i].address . street+', '+'NAME:'+data[i]. name ;
                 mainContainer.appendChild(div);
             }
         }
