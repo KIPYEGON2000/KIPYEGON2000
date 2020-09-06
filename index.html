@@ -10,7 +10,7 @@
     <h1>kipyegon Amos </h1>
     <div id="myData"></div>
     <script>
-        fetch('people.json')
+        fetch('restaurants-1.json')
             .then(function (response) {
                 return response.json();
             })
@@ -24,7 +24,7 @@
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
-                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                div.innerHTML = 'Name: ' + data[i].address.street;
                 mainContainer.appendChild(div);
             }
         }
