@@ -5,6 +5,7 @@
 	<title>kipyegon Amos ENC222-0130/2017 </title>
 	<!-- External Stylesheets -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<div id="header " style =" height :10px;width :100 %;background :red">
 </head>
 <body style ="background :blue ">
     <!-- Our web map and content will go here -->
@@ -20,11 +21,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenSt
 		
 		
 		  <!-- Web Map Scripts are here -->
-	// load GeoJSON from an external file
-$.getJSON("restaurants-1.json",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.json(data).addTo(map);
-});
+	
 </script>
 	
 	        <!-- HTML Page Elements are here -->
