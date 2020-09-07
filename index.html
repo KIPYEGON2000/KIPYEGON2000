@@ -21,9 +21,13 @@
 		
 		// Add OpenStreetMap tile layer to map element
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
-		$.getJSON("restaurants-1.json",function(data){
+	$.getJSON("restaurants-1.json",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.json(data).addTo(map);
+    L.Json(data,{
+        onEachFeature: function (address , layer) {
+            layer.bindPopup(address. cuisine );
+        }
+    }).addTo(map);
 });
 		
 </script>
