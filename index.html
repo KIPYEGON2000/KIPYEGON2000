@@ -21,9 +21,9 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenSt
 		
 		  <!-- Web Map Scripts are here -->
 	// load GeoJSON from an external file
-$.getJSON("restaurant-1.json",function(data){
+$.getJSON("restaurants-1.json",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    L.Json(data).addTo(map);
 });
 </script>
 	
