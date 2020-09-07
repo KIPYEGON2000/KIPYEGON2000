@@ -1,47 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>kipyegon Amos </title>
+	<meta charset="utf-8">
+	<title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 </head>
-<body style ="background:blue">
-    <div id="header" style ="background :red;height :80px; position :absolute ;top :1%;width :100 %">
-        <p style ="position :absolute ;top:1%">display </p>
-        <p> </p>
-    <h1>kipyegon Amos </h1>
-    <div id="myData"></div>
+<body>
+    <!-- Our web map and content will go here -->
+    <!-- Add the Leaflet JavaScript library -->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <div id="map" style="width: 705px; height: 375px"></div>
+    
     <script>
-        fetch('restaurants-1.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("myData");
-            for (var i = 0; i < data.length; i++) {
-                var div = document.createElement("div");
-                div.innerHTML = 'Street : ' + data[i].address . street+', '+'NAME:'+data[i]. name ;
-                mainContainer.appendChild(div);
-            }
-        }
-    </script>
-<footer>
-    <p>KIPYEGON AMOS ENC222-0130/2017</p>
-    <p>&copy copyright amos</p>
-    <script language ="JavaScript ">
-       
-    function popup() {
-   alert  ("kipyegon Amos ENC222-0130/2017") } 
-        
-    </script >
-                   <input type =" button "onclick =" popup() "value =" JavaScript pop up ">
-    </footer>
-</body>
+    // Create variable to hold map element, give initial settings to map
+    var map = L.map('map',{ center: [42.362432, -71.086086], zoom: 14});
+        / Add OpenStreetMap tile layer to map element
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
+
+</script>
+    </body >
 </html>
